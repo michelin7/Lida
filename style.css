@@ -81,32 +81,32 @@ body {
 }
 
 .main-title .line1 {
-    font-size: 5.5rem;
+    font-size: 4.6rem;
     line-height: 0.85;
 }
 
 .main-title .line1 em {
     font-style: normal;
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     vertical-align: super;
 }
 
 .main-title .line2 {
-    font-size: 4.8rem;
+    font-size: 4rem;
     line-height: 0.85;
 }
 
 .main-title .line3 {
-    font-size: 5.5rem;
+    font-size: 4.6rem;
     line-height: 0.85;
 }
 
 /* ---- Sparkle ---- */
 .sparkle {
     position: absolute;
-    top: 38px;
+    top: 75px;
     right: 30px;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     color: var(--poster-cream);
     animation: sparkle-pulse 2.5s ease-in-out infinite;
     z-index: 4;
@@ -158,7 +158,7 @@ body {
 .deco-speech {
     position: absolute;
     top: 30%;
-    left: -10px;
+    left: 4px;
     background: #fff;
     color: #2a0e18;
     font-family: var(--font-accent);
@@ -357,8 +357,8 @@ body {
 
 .date-info {
     position: absolute;
-    top: 15px;
-    right: 25px;
+    top: 18px;
+    right: 22px;
     text-align: right;
     font-family: var(--font-accent);
     color: #fff;
@@ -368,15 +368,15 @@ body {
 
 .date-text {
     display: block;
-    font-size: 2.4rem;
-    line-height: 1.2;
+    font-size: 1.8rem;
+    line-height: 1.15;
     font-weight: 700;
 }
 
 .time-text {
     display: block;
-    font-size: 2rem;
-    line-height: 1.2;
+    font-size: 1.5rem;
+    line-height: 1.15;
     font-weight: 700;
 }
 
@@ -620,44 +620,138 @@ body {
 /* ==========================================================
    RESPONSIVE
    ========================================================== */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .poster-hero {
-        padding: 28px 20px 0;
+        padding: 28px 22px 0;
     }
 
-    .main-title .line1 { font-size: 4.8rem; }
-    .main-title .line1 em { font-size: 2.8rem; }
-    .main-title .line2 { font-size: 3.8rem; }
-    .main-title .line3 { font-size: 4.8rem; }
+    .main-title .line1 { font-size: 4rem; }
+    .main-title .line1 em { font-size: 2.3rem; }
+    .main-title .line2 { font-size: 3.4rem; }
+    .main-title .line3 { font-size: 4rem; }
 
-    .oval-frame {
+    .sparkle {
+        top: 70px;
+        right: 20px;
+        font-size: 1.8rem;
+    }
+
+    .date-info {
+        top: 16px;
+        right: 18px;
+    }
+    .date-text { font-size: 1.5rem; }
+    .time-text { font-size: 1.25rem; }
+
+    .photo-section {
+        padding: 20px 0 50px;
+    }
+
+    .photo-backdrop {
         width: 240px;
-        height: 290px;
+        height: 240px;
     }
 
-    .date-overlay { font-size: 5.5rem; }
-    .date-overlay .dot { font-size: 4rem; }
+    .flower-frame {
+        width: 220px;
+        height: 220px;
+    }
+
+    .deco-disco {
+        font-size: 3rem;
+        top: -10px;
+        left: 0;
+    }
+
+    .deco-speech {
+        font-size: 0.95rem;
+        padding: 6px 10px;
+        left: 2px;
+    }
+
+    .poster-info {
+        padding: 45px 20px 26px;
+    }
 
     .info-grid {
         gap: 10px 14px;
     }
 
-    .info-label { font-size: 1.1rem; }
-    .info-location { font-size: 1.05rem; }
+    .info-label { font-size: 1.05rem; }
+    .info-location { font-size: 1rem; }
+
+    .wishlist-btn {
+        padding: 9px 16px;
+        font-size: 0.9rem;
+    }
+
+    .details-section {
+        padding: 18px 18px 24px;
+    }
+
+    .details-card {
+        padding: 20px 18px;
+        border-radius: 20px;
+    }
+
+    .sched-time {
+        font-size: 0.82rem;
+        min-width: 78px;
+    }
+    .sched-event { font-size: 0.82rem; }
+
+    .letter-note { font-size: 1.5rem; }
 
     .footer-note { font-size: 2rem; }
 }
 
-@media (max-width: 340px) {
-    .main-title .line1 { font-size: 4rem; }
-    .main-title .line1 em { font-size: 2.4rem; }
-    .main-title .line2 { font-size: 3.2rem; }
-    .main-title .line3 { font-size: 4rem; }
+@media (max-width: 360px) {
+    .main-title .line1 { font-size: 3.4rem; }
+    .main-title .line1 em { font-size: 2rem; }
+    .main-title .line2 { font-size: 2.9rem; }
+    .main-title .line3 { font-size: 3.4rem; }
 
-    .oval-frame {
-        width: 210px;
-        height: 260px;
+    .sparkle {
+        top: 58px;
+        font-size: 1.5rem;
     }
 
-    .date-overlay { font-size: 4.5rem; }
+    .date-text { font-size: 1.3rem; }
+    .time-text { font-size: 1.1rem; }
+
+    .photo-backdrop {
+        width: 210px;
+        height: 210px;
+    }
+
+    .flower-frame {
+        width: 190px;
+        height: 190px;
+    }
+
+    .deco-speech {
+        font-size: 0.85rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .info-grid::before {
+        display: none;
+    }
+
+    .info-cell--right {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .schedule-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .footer-note { font-size: 1.7rem; }
 }
