@@ -67,6 +67,8 @@ body {
     line-height: 0.88;
     position: relative;
     z-index: 3;
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 
 .main-title .line1,
@@ -81,23 +83,24 @@ body {
 }
 
 .main-title .line1 {
-    font-size: 4.6rem;
+    font-size: clamp(2.8rem, 13vw, 5.5rem);
     line-height: 0.85;
 }
 
 .main-title .line1 em {
     font-style: normal;
-    font-size: 2.6rem;
+    font-size: clamp(1.6rem, 7.5vw, 3.2rem);
     vertical-align: super;
 }
 
 .main-title .line2 {
-    font-size: 4rem;
+    font-size: clamp(2.4rem, 11vw, 4.8rem);
     line-height: 0.85;
+    letter-spacing: -1px;
 }
 
 .main-title .line3 {
-    font-size: 4.6rem;
+    font-size: clamp(2.8rem, 13vw, 5.5rem);
     line-height: 0.85;
 }
 
